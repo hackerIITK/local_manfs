@@ -11,7 +11,7 @@
 
         <!-- Remove Hals -->
         <remove-project name="crdroidandroid/android_hardware_qcom_media" />
-        <remove-project name="crdroidandroid/android_hardware_qcom_media" />
+        <remove-project name="crdroidandroid/android_hardware_qcom_audio" />
 
         <!-- Clone Hals -->
         <project path="hardware/qcom-caf/msm8996/media" name="adi153/platform_hardware_qcom-caf_media" groups="qcom,pdk-qcom" remote="adi153" revision="10" />
