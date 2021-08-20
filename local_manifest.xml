@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+        <remote name="adi153"
+                fetch="https://github.com" />
+
+        <!-- Sync trees -->
+        <project path="device/xiaomi/rolex" name="adi153/device_xiaomi_rolex" remote="adi153" revision="cr-11.0" />
+        <project path="kernel/xiaomi/msm8937" name="adi153/android_kernel_xiaomi_msm8937" remote="adi153" revision="11" />
+        <project path="vendor/xiaomi/rolex" name="adi153/vendor_xiaomi_rolex" remote="adi153" revision="cr-11.0" />
+
+        <!-- Remove Hals -->
+        <remove-project name="crdroidandroid/android_hardware_qcom_media" />
+        <remove-project name="crdroidandroid/android_hardware_qcom_media" />
+
+        <!-- Clone Hals -->
+        <project path="hardware/qcom-caf/msm8996/media" name="adi153/platform_hardware_qcom-caf_media" groups="qcom,pdk-qcom" remote="adi153" revision="10" />
+        <project path="hardware/qcom-caf/msm8996/audio" name="adi153/platform_hardware_qcom-caf_audio" groups="qcom,qcom_audio,pdk-qcom" remote="adi153" revision="10" />
+
+</manifest>
