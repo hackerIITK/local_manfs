@@ -5,7 +5,8 @@
                 fetch="https://github.com" />
 
         <remote name="hacker"
-                fetch="https://github.com/hackerIITK-materials" />
+           fetch="https://github.com/hackerIITK-materials"
+           revision="refs/heads/11.x" />
 
         <!-- Sync trees -->
         <project path="device/xiaomi/rova" name="adi153/android_device_xiaomi_rova" remote="adi153" revision="eleven" />
