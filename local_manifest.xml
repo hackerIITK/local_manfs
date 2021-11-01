@@ -4,6 +4,9 @@
         <remote name="adi153"
                 fetch="https://github.com" />
 
+        <remote name="hacker"
+                fetch="https://github.com/hackerIITK-materials" />
+
         <!-- Sync trees -->
         <project path="device/xiaomi/rova" name="adi153/android_device_xiaomi_rova" remote="adi153" revision="eleven" />
         <project path="device/xiaomi/msm8937-common" name="adi153/android_device_xiaomi_msm8937-common" remote="adi153" revision="lineage-18.1" />
@@ -20,5 +23,11 @@
         <project path="hardware/qcom-caf/msm8996/media" name="adi153/platform_hardware_qcom-caf_media" groups="qcom,pdk-qcom" remote="adi153" revision="10" />
         <project path="hardware/qcom-caf/msm8996/audio" name="adi153/platform_hardware_qcom-caf_audio" groups="qcom,qcom_audio,pdk-qcom" remote="adi153" revision="10" />
         <project path="hardware/qcom-caf/msm8996/display" name="adi153/platform_hardware_qcom-caf_display" groups="qcom,pdk-qcom,qcom_display" remote="adi153" revision="10" />
-
+        
+        <!-- Remove stuffs -->
+        <remove-project name="platform_vendor_aosp" />
+        
+        <!-- Clone back -->
+        <project path="vendor/aosp" name="vendor_aex" remote="hacker" />
+        
 </manifest>
